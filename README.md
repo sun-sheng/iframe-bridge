@@ -41,7 +41,8 @@ data: 不同的接口对应不同的值
 err.code: 异常code 
 <br/>
 err.msg: 异常信息 
-* options: 配置项，不同的接口对应不同的配置项
+* detail: 发送的请求内容，和 respond 方法对应
+* options: 覆盖defaultOptions的配置
 
 ### respond(name, func)
 响应 iframeBridge 端发出的请求
