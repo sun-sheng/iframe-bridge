@@ -43,6 +43,11 @@ err.code: 异常code
 err.msg: 异常信息 
 * options: 配置项，不同的接口对应不同的配置项
 
+### respond(name, func)
+响应 iframeBridge 端发出的请求
+
+* name: {string} 请求名称
+* func: function (resolve, reject, detail) {} 处理响应
 
 
 
