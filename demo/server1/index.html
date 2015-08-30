@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>iframe bridge test</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h1>the server1 page</h1>
+
+            <h3>Test request server2: <span class="color-red">req1</span></h3>
+            <button class="btn" id="btn1">req1</button>
+            <h3>Test trigger server2: <span class="color-red">evn1</span></h3>
+            <button class="btn" id="btn2">evn1</button>
+
+            <p id="log"></p>
+        </div>
+        <div class="col-6">
+            <div class="frame">
+                <div class="frame-head">
+                    <div class="head-content">
+                        <div class="head-before">
+
+                        </div>
+                        <div class="head-inner">
+
+                        </div>
+                        <div class="head-after">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="iframe-bridge.js"></script>
+<script src="index.js?version=1.x.x"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>iframe bridge test</title>
+    <style>
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            overflow: auto;
+            /* 注意这个属性不能嵌套使用 */
+            -webkit-overflow-scrolling: touch;
+        }
+        .btn
+        {
+            display: block;
+            width: 100%;
+            text-align: center;
+            line-height: 1em;
+            padding: 1em;
+            border: 1px solid #ddd;
+            background-color: transparent;
+            margin-bottom: 15px;
+        }
+        .color-red { color: red; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>the server2 page</h1>
+
+    <h3>Test request server1: <span class="color-red">req2</span></h3>
+    <button class="btn" id="btn1">req2</button>
+    <h3>Test trigger server1: <span class="color-red">evn2</span></h3>
+    <button class="btn" id="btn2">evn2</button>
+
+    <p id="log"></p>
+</div>
+<script src="../../src/iframe-bridge.js"></script>
+<!-- 静态资源每次更新后 加上版本号，推荐使用动态后缀 demo_xxx,js -->
+<script src="index.js?version=1.x.x"></script>
+</body>
+</html>

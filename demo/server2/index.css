@@ -1,0 +1,29 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    overflow: auto;
+    /* 注意这个属性不能嵌套使用 */
+    -webkit-overflow-scrolling: touch;
+}
+.btn
+{
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    margin-bottom: 15px;
+}
+.color-red { color: red; }

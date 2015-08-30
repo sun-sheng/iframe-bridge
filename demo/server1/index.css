@@ -1,0 +1,102 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#content
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.full-height
+{
+
+}
+
+.row {
+    margin: 0 -15px;
+}
+.row:before, .row:after
+{
+    display: table;
+    content: '';
+    clear: both;
+}
+.row .col-6
+{
+    box-sizing: border-box;
+    padding: 0 15px;
+    width: 50%;
+    float: left;
+}
+.frame
+{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    padding-top: 40px;
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+.frame-head
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.frame-head .head-content
+{
+    display: flex;
+    display: -webkit-flex;
+}
+.frame-head .head-content .item-inner
+{
+    flex: 1;
+    -webkit-flex: 1;
+}
+
+.frame-body
+{
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.btn
+{
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    margin-bottom: 15px;
+}
+.color-red { color: red; }

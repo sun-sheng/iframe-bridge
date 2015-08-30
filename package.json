@@ -1,0 +1,20 @@
+{
+  "name": "eve-bridge",
+  "version": "1.0.0",
+  "description": "eve html frame bridge",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eve"
+  ],
+  "author": "sheng.sun@ele.me",
+  "license": "ISC"
+}
