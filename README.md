@@ -47,7 +47,9 @@ err.msg: 异常信息
 响应 iframeBridge 端发出的请求
 
 * name: {string} 请求名称
-* func: function (resolve, reject, detail) {} 处理响应
-
+* func: function (detail, resolve, reject) {} 处理响应
+    * detail 请求数据
+    * resolve {function (result)} 处理完成后调用，result 参数为需要发送的结果
+    * reject {function (error)} 处理失败后调用，error 为需要发送的错误
 
 
